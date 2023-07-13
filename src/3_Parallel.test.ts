@@ -14,8 +14,8 @@ describe("Parallel", () => {
         () => new Promise((resolve) => setTimeout(resolve, 50, 2)),
         () => new Promise((resolve) => setTimeout(resolve, 20, 3)),
         () => new Promise((resolve) => setTimeout(resolve, 90, 4)),
-        () => new Promise((resolve) => setTimeout(resolve, 30, 5))
-      )
+        () => new Promise((resolve) => setTimeout(resolve, 30, 5)),
+      ),
     ).toStrictEqual([1, 3, 2, 5, 4]);
   });
   it("returns an array of results", async () => {
@@ -25,8 +25,8 @@ describe("Parallel", () => {
         () => new Promise((resolve) => setTimeout(resolve, 50, 2)),
         () => new Promise((resolve) => setTimeout(resolve, 20, 3)),
         () => new Promise((resolve) => setTimeout(resolve, 90, 4)),
-        () => new Promise((resolve) => setTimeout(resolve, 30, 5))
-      )
+        () => new Promise((resolve) => setTimeout(resolve, 30, 5)),
+      ),
     ).toStrictEqual([1, 3, 5, 2, 4]);
   });
 });
