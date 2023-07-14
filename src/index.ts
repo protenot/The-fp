@@ -8,7 +8,7 @@ console.log(hof(5)(6)(7)(8)(9)); // 35
 const div1 = document.createElement("div");
 document.append(div1);
 const h1 = document.createElement("h1");
-document.append(h1);
+div1.append(h1);
 h1.innerText = "Функция для каррирования";
 const p1 = document.createElement("p");
 div1.append(p1);
@@ -56,9 +56,9 @@ spiral([
   [15, 16, 17, 18, 19],
 ]);
 // [0, 1, 2, 3, 4, 9, 14, 19, 18, 17, 16, 15, 10, 5, 6, 7, 8, 13, 12, 11]
-const h2_3 =document.createElement("h2");
+const h2_3 = document.createElement("h2");
 div1.append(h2_3);
-h2_3.innerText = `Матрица, развернутая по спирали`
+h2_3.innerText = `Матрица, развернутая по спирали`;
 const div2 = document.createElement("div");
 div1.append(div2);
 div2.innerText = `[0, 1, 2, 3, 4],\n  [5, 6, 7, 8, 9],\n [10, 11, 12, 13, 14],\n [15, 16, 17, 18, 19],\n = ${spiral(
@@ -71,9 +71,9 @@ div2.innerText = `[0, 1, 2, 3, 4],\n  [5, 6, 7, 8, 9],\n [10, 11, 12, 13, 14],\n
 )}`;
 import { semver } from "./5_semver";
 semver(["1.0.5", "2.5.0", "0.12.0", "1", "1.23.45", "1.4.50", "1.2.3.4.5.6.7"]); // [ "0.12.0", "1", "1.0.5", "1.2.3.4.5.6.7", "1.4.50", "1.23.45", "2.5.0" ]
-const h3_3 =document.createElement("h2");
+const h3_3 = document.createElement("h2");
 div1.append(h2_3);
-h3_3.innerText = `Сортировка semver`
+h3_3.innerText = `Сортировка semver`;
 const div3 = document.createElement("div");
 div1.append(div3);
 div3.innerText = `semver(["1.0.5", "2.5.0", "0.12.0", "1", "1.23.45", "1.4.50", "1.2.3.4.5.6.7"]): ${semver(
