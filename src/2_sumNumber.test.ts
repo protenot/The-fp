@@ -13,6 +13,6 @@ describe("sumNumber", () => {
     expect(Number(s3(5))).toBe(8);
     console.log(Number(s3));
     //  expect(Number(s3)).toBe(3);
-   // expect(Number(s3(6))).toBe(9);
+    // expect(Number(s3(6))).toBe(9);
   });
 });

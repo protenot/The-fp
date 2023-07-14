@@ -16,6 +16,7 @@ module.exports = {
   },
   plugins: ["jest", "@typescript-eslint", "import"],
   rules: {
+    "no-use-before-define": "off",
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-base-to-string": "off",
