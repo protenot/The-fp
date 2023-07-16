@@ -1,9 +1,6 @@
- type ForCarry ={(a: number,
-  b?: number,
-  c?: number,
-  d?: number,
-  e?: number,
-): number  } 
+type ForCarry = {
+  (a: number, b?: number, c?: number, d?: number, e?: number): number;
+};
 
 export const func = (
   a: number,
@@ -13,9 +10,7 @@ export const func = (
   e?: number,
 ): number => a + b + c + d + e;
 
-export function carry(
-  func: Function,
-): ForCarry  {
+export function carry(func: Function): ForCarry {
   return function curried(...args: number[]): number {
     if (args.length >= func.length) {
       return func.apply(this, args);
